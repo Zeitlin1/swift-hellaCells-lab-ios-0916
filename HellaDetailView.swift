@@ -7,39 +7,21 @@
 //
 
 import UIKit
-
-class HellaDetailView: UIViewController {
-
-    @IBOutlet weak var NumberOutlet: UILabel!
     
-    var hellaString: String?
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if let hellaString = hellaString{
-            NumberOutlet?.text = hellaString
-            print("hellaDetailview fired!")
-        }
+    class HellaDetailView: UIViewController {
         
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
+        @IBOutlet weak var NumberOutlet: UILabel!
+        
+        var hellaString: String?
+        
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            if let hellaString = hellaString{
+                NumberOutlet?.text = hellaString
+                print("hellaDetailview fired!")
+            }
+            
+            
+            
+        }
 }
